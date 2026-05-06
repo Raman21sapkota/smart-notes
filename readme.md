@@ -20,7 +20,6 @@ The system is designed not just as a CRUD application, but with attention to sca
 - Redis caching to reduce database load
 - Rate limiting for AI API usage
 - Input validation using Zod
-- Swagger API documentation
 - Structured error handling
 
 ---
@@ -82,8 +81,6 @@ If Redis is unavailable, rate limiting is bypassed to prioritize availability.
 - Google OAuth allows users to sign in using their Google account
 - If a user signs in with Google using an existing email, the account is linked
 
-Users created via OAuth do not have a password unless explicitly set later.
-
 ---
 
 ## Failure Handling
@@ -105,30 +102,6 @@ The goal is to maintain availability and prevent inconsistent states.
 
 A production-ready REST API for a note-taking application with AI-powered summarization, Redis caching, and Google OAuth authentication.
 
-## Features
-
-- **Authentication** — JWT-based auth with Google OAuth 2.0 and httpOnly cookies
-- **Notes Management** — Create, read, update, soft delete and restore notes
-- **AI Summarization** — Summarize notes using Google Gemini AI
-- **Redis Caching** — Cache Gemini responses to reduce API costs
-- **Rate Limiting** — Redis-based rate limiting on Gemini API calls per user
-- **Search & Filter** — Full-text search by title/content and filter by tags
-- **Pagination & Sorting** — Page through notes with custom sort options
-- **Pinned Notes** — Pin important notes to the top
-- **Soft Delete** — Delete and restore notes
-- **Validation** — Request validation using Zod
-- **API Docs** — Swagger UI documentation
-
-## Tech Stack
-
-- **Runtime** — Node.js
-- **Framework** — Express.js
-- **Database** — PostgreSQL with Prisma ORM
-- **Cache** — Redis
-- **AI** — Google Gemini API
-- **Auth** — Passport.js, JWT, Google OAuth 2.0
-- **Validation** — Zod
-- **Documentation** — Swagger UI
 
 ## Getting Started
 
