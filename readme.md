@@ -32,9 +32,8 @@ The system is designed not just as a CRUD application, but with attention to sca
 - Prisma ORM
 - Redis
 - JWT Authentication
-- Google OAuth (Passport.js)
+- Google OAuth
 - Zod (validation)
-- Swagger (API documentation)
 
 ---
 
